@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var n = prompt("enter two digit number:");
+        var n1 = parseInt(n.charAt(0));
+        var n2 = parseInt(n.charAt(1));
+        var n3 = n1;
+        document.writeln("First number : " +n1 + "<br/>");
+        document.writeln("Second number : " +n2 + "<br/>");
+        for (i = 0; i < n2 - 1; i++) {
+            n3 = n3 * n1;
+        }
+        document.write(n3);
+    </script>
+</body>
+</html>

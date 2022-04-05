@@ -1,0 +1,25 @@
+<!--
+    Author : Shukla yash
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Birth Date</title>
+</head>
+<body>
+    <script>
+        var today, bday, diff, days;
+        var day = prompt("Enter your birth date:");
+        var month = prompt("Enter your birth month:");
+        today = new Date();
+        bday = new Date(today.getFullYear(), parseInt(month) - 1, day);
+        if (today.getTime() > bday.getTime()) {
+            bday.setFullYear(bday.getFullYear() + 1);
+        }
+        diff = bday.getTime() - today.getTime();
+        days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        alert(days + " days remaining in your birthday");
+    </script>
+</body>
+
+</html>

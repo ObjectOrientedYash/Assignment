@@ -1,0 +1,26 @@
+<!--
+    Author : Shukla yash 
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Word Matching</title>
+</head>
+<body>
+    <script>
+        var string = ["code","coding","computer","coder","web development"];
+        flag = false;
+        var u = prompt("enter word:");
+        for (i = 0; i < string.length; i++) {
+            if (u == string[i]) {
+                flag = true;
+                document.writeln("word at index:", i);
+                break;
+            }
+        }
+        if (flag == false) {
+            document.write("word not found");
+        }
+    </script>
+</body>
+</htm
